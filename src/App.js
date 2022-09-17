@@ -2,16 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    return <div className='App'></div>;
 }
 
 function First() {
-  return(
-    <div></div>
-  )
+    return <div>희수가 함</div>;
 }
 export default App;
