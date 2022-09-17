@@ -1,34 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './component/header';
-import 'bootstrap/dist/css/bootstrap.css';
-import { Nav } from 'react-bootstrap';
-
+import Header from './component/Header';
+import Profile from './component/Profile';
+import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 function App() {
     return (
         <div className='App'>
-            <Header />      
-            <Boards/>
+            <Header />
+            <Routes>
+                <Route
+                    path='/'
+                    element={
+                        <>
+                            <main>
+                                <Profile />
+                            </main>
+                        </>
+                    }
+                ></Route>
+            </Routes>
         </div>
     );
 }
-
-function Boards() {
-  return (
-    <>
-    <Nav variant="tabs" defaultActiveKey="link0">
-            <Nav.Item>
-              <Nav.Link eventKey="link1" >게시물</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link2">동영상</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link3">저장됨</Nav.Link>
-            </Nav.Item>
-        </Nav>
-        </>
-  );
+function SettingModal() {
+    return (
+        <div>
+            <div className='setting-modal'>.</div>
+        </div>
+    );
 }
-
 export default App;
