@@ -1,5 +1,4 @@
 .App {
-    position: relative;
 }
 body,
 h1,
@@ -91,7 +90,7 @@ address {
 main {
     box-sizing: border-box;
     margin-top: 60px;
-    padding: 40px 250px;
+    padding: 20px 250px;
 }
 /* profile  */
 .profile {
@@ -170,28 +169,60 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .setting-modal > ul {
-    width: 300px;
-    height: 100%;
+    width: 400px;
     position: absolute;
     top: 50%;
-    height: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    border-radius: 16px;
     z-index: 1;
+    padding: 0;
+    overflow: hidden;
 }
-
+.setting-modal > ul > li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    text-align: center;
+}
+.setting-modal > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 50px;
+}
+.setting-modal > ul > li > a:hover {
+    background-color: rgba(217, 217, 217, 0.3);
+}
 /* Board */
-
-.container {
+.tab-container {
+    padding: 0;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px 300px 300px;
     gap: 1rem 1rem;
 }
 .photo {
     width: 100%;
     height: 100%;
+}
+.tab {
+    justify-content: center;
+}
+.nav-item a {
+    color: #444;
+    font-size: 14px;
 }

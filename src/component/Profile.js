@@ -1,4 +1,9 @@
+import { useState } from 'react';
+import SettingModal from './SettingModal';
+
 function Profile() {
+    let [settingModal, setModal] = useState(false);
+
     return (
         <section className='profile'>
             <div className='profile-img'>
@@ -8,7 +13,12 @@ function Profile() {
                 <div>
                     <h4 className='profile-title'>heesoo</h4>
                     <button className='profile-edit'>프로필 편집</button>
-                    <button className='btn-setting'>
+                    <button
+                        className='btn-setting'
+                        onClick={() => {
+                            setModal(!settingModal);
+                        }}
+                    >
                         <img src={process.env.PUBLIC_URL + '/settings.svg'} alt='btn-setting' />
                     </button>
                 </div>
@@ -34,6 +44,8 @@ function Profile() {
                         #UX/UI
                     </p>
                 </div>
+
+                {settingModal == true ? <SettingModal /> : null}
             </div>
         </section>
     );
