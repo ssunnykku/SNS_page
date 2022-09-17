@@ -6,6 +6,6 @@ function App() {
 }
 
 function First() {
-    return <div>희수가 함</div>;
+    return <div>희수가 함 또 수정함</div>;
 }
 export default App;
