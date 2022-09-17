@@ -11,7 +11,9 @@ function App() {
 
 function First() {
   return(
-    <div>서니가함</div>
+    <div>서니가함
+      또 수정함
+    </div>
   )
 }
 export default App;
