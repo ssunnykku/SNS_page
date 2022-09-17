@@ -80,3 +80,17 @@ address {
     border: none;
     background-color: transparent;
 }
+
+/* Board */
+
+.container {
+	display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1rem 1rem;
+
+}
+.photo {
+    width: 100%;
+    height: 100%;
+}
