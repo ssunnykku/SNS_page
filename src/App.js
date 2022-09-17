@@ -1,16 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header';
+import Profile from './component/Profile';
 import Boards from './component/Boards';
-
+import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 function App() {
     return (
         <div className='App'>
-            <Header />      
+            <Header />
             <Boards/>
         </div>
     );
 }
-
-
+function SettingModal() {
+    return (
+        <div>
+            <div className='setting-modal'>.</div>
+        </div>
+    );
+}
 export default App;
