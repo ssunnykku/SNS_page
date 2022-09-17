@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav } from 'react-bootstrap';
 import React,{ useState } from 'react';
+import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
 
 function Boards() {
 
