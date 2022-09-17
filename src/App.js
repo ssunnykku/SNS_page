@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './component/header';
 
 function App() {
-    return <div className='App'></div>;
+    return (
+        <div className='App'>
+            <Header />
+        </div>
+    );
 }
 
-function First() {
-    return <div>희수가 함 또 수정함</div>;
-}
 export default App;
