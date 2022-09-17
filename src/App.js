@@ -8,19 +8,12 @@ function App() {
     return (
         <div className='App'>
             <Header />
-            <Routes>
-                <Route
-                    path='/'
-                    element={
-                        <>
-                            <main>
-                                <Profile />
-                            </main>
-                        </>
-                    }
-                ></Route>
-            </Routes>
-            <Boards/>
+            <div>
+                <main>
+                    <Profile />
+                </main>
+            </div>
+            <Boards />
         </div>
     );
 }
