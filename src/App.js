@@ -11,7 +11,7 @@ function App() {
 
 function First() {
   return(
-    <div></div>
+    <div>서니가함</div>
   )
 }
 export default App;
