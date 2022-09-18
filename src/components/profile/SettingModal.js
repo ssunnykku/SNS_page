@@ -11,7 +11,7 @@ function SettingModal() {
 
     return (
         <div className='setting-modal'>
-            <ul>
+            <ul role="dialog">
                 <li>
                     <a href='#none'>비밀번호 변경</a>
                 </li>

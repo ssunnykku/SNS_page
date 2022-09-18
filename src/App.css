@@ -224,3 +224,16 @@ main {
     color: #444;
     font-size: 14px;
 }
+
+@media (mid-width:640) and (max-width: 800px) {
+    .search-box input {
+        width: 0px;
+        height: 0px;
+
+    }
+    .search-box::before {
+        width: 0px;
+        height: 0px;
+    }
+}
+
