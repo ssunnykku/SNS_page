@@ -44,7 +44,6 @@ function Profile() {
                         #UX/UI
                     </p>
                 </div>
-
                 {settingModal == true ? <SettingModal /> : null}
             </div>
         </section>

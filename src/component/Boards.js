@@ -2,9 +2,54 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Nav } from 'react-bootstrap';
 import React, { useState } from 'react';
 
+const photos = [
+    {
+        id: 0,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 1,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 2,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 3,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 4,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 5,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 6,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 7,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 8,
+        pic: '/boardexm.jpg'
+    },
+    {
+        id: 9,
+        pic: '/boardexm.jpg'
+    }
+]
+
+
 function Boards() {
     const [tab, setTab] = useState(0);
 
+   
     return (
         <>
             <Nav variant='tabs' defaultActiveKey='link0' className='tab'>
@@ -39,60 +84,32 @@ function Boards() {
                     </Nav.Link>
                 </Nav.Item>
             </Nav>
-            <TabContent tab={tab} />
+            <TabContent tab={tab} 
+                        photos={photos}
+                                />
+            {/* {
+                photos.map((a, i) => {
+                    return(
+                    )
+                })
+                
+            } */}
         </>
     );
 }
 
-function TabContent({ tab }) {
+function TabContent({ tab, photos }) {
     if (tab === 0) {
         return (
             <ul className='tab-container'>
-                <li className='item'>
+               { photos.map((a, i) => {
+                    return (
+                    <li className='photo'>
                     <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
+                       <img className='photo' src={photos[i].pic} alt='boardImg' />
                     </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
-                <li className='photo'>
-                    <a href='#none'>
-                        <img className='photo' src={process.env.PUBLIC_URL + '/boardexm.jpg'} alt='boardImg' />
-                    </a>
-                </li>
+                </li>)
+                })}
             </ul>
         );
     } else if (tab === 1) {
