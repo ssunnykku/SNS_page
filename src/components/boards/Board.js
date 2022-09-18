@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Board() {
   return (
-    <>
+    <div className="comment-back">
       <div className="board">
         <article>
           <div className="comment-header">
@@ -69,7 +69,7 @@ function Board() {
           </div>
         </article>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -226,6 +226,29 @@ main {
 }
 
 /*  Board */
+.comment-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.board {
+    width: 1200px;
+    height: 625px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 0px;
+    z-index: 1;
+    padding: 0;
+    overflow: hidden;
+}
 
 .board > article {
     display: flex;
