@@ -1,14 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './component/Header';
-import Profile from './component/Profile';
-import Boards from './component/Boards';
+import Header from './components/Header';
+import Profile from './components/profile/Profile';
+import Boards from './components/boards/Boards';
 
 function App() {
     return (
         <div className='App'>
             <Header />
-            <div>
+            <div className="personalPage">
                 <main>
                     <Profile />
                     <Boards />

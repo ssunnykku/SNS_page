@@ -48,7 +48,6 @@ const photos = [
 
 function Boards() {
     const [tab, setTab] = useState(0);
-
    
     return (
         <>
@@ -87,26 +86,21 @@ function Boards() {
             <TabContent tab={tab} 
                         photos={photos}
                                 />
-            {/* {
-                photos.map((a, i) => {
-                    return(
-                    )
-                })
-                
-            } */}
         </>
     );
 }
 
 function TabContent({ tab, photos }) {
+    const [board, setBoard] = useState(false);
+
     if (tab === 0) {
         return (
             <ul className='tab-container'>
                { photos.map((a, i) => {
                     return (
-                    <li className='photo'>
+                    <li className='photo' key={photos[i].id}>
                     <a href='#none'>
-                       <img className='photo' src={photos[i].pic} alt='boardImg' />
+                       <img className='photo' src={photos[i].pic} alt='boardImg' type="button" onClick={()=>{setBoard(!board)}} />
                     </a>
                 </li>)
                 })}
