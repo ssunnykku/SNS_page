@@ -205,7 +205,7 @@ main {
 .setting-modal > ul > li > a:hover {
     background-color: rgba(217, 217, 217, 0.3);
 }
-/* Board */
+/* Boards */
 .tab-container {
     padding: 0;
     display: grid;
@@ -213,7 +213,7 @@ main {
     grid-template-rows: 300px 300px 300px;
     gap: 1rem 1rem;
 }
-.photo {
+.photoList {
     width: 100%;
     height: 100%;
 }
@@ -223,6 +223,37 @@ main {
 .nav-item a {
     color: #444;
     font-size: 14px;
+}
+
+/*  Board */
+
+.board > article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.comment-header, .comment-btn {
+    border-bottom: 1px solid #eee;
+}
+
+.board-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+}
+
+.comment-header > a > div {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(156, 74, 255);
+    border-radius: 50%;
+    background-image: url(../public/profile.png);
+    background-position: center center;
+    background-size: 40%;
 }
 
 @media (mid-width:640) and (max-width: 800px) {

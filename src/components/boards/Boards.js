@@ -6,43 +6,43 @@ import TabContent from './TabContent';
 const photos = [
     {
         id: 0,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 1,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 2,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 3,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 4,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 5,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 6,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 7,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 8,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     },
     {
         id: 9,
-        pic: '/boardexm.jpg'
+        photo: '/boardexm.jpg'
     }
 ]
 
