@@ -237,6 +237,18 @@ main {
     border-bottom: 1px solid #eee;
 }
 
+.comment-header, .comment-chats, .comment-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comment-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .board-img {
     display: flex;
     justify-content: center;
@@ -246,14 +258,20 @@ main {
     object-fit: cover;
 }
 
-.comment-header > a > div {
-    width: 55px;
-    height: 55px;
+.comment-profile {
+    width: 50px;
+    height: 50px;
     background-color: rgb(156, 74, 255);
     border-radius: 50%;
     background-image: url(../public/profile.png);
     background-position: center center;
     background-size: 40%;
+}
+
+.nickname{
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
 @media (mid-width:640) and (max-width: 800px) {
