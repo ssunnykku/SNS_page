@@ -226,3 +226,12 @@ main {
     color: #444;
     font-size: 14px;
 }
+
+@media (mid-width: 320px) and (max-width: 800px) {
+    .search-box input {
+        width: 0px;
+        height: 0px;
+
+    }
+}
+
